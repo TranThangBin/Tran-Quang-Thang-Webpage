@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,12 +12,12 @@
         <link rel="icon" href="../Logo/MyLogo.svg" />
         <title>Tran Quang Thang</title>
     </head>
-    <body class="bg-[#171810]">
+    <body class="bg-[#171810] text-white">
         <nav>
             <ul
-                class="flex items-center gap-10 text-white p-4 text-lg relative after:content-[''] after:w-11/12 after:h-1 after:bg-white after:absolute after:bottom-0 after:right-1/2 after:translate-x-1/2"
+                class="h-40 flex items-center gap-10 text-lg relative after:content-[''] after:w-11/12 after:h-1 after:bg-white after:absolute after:bottom-0 after:right-1/2 after:translate-x-1/2"
             >
-                <li class="mr-auto">
+                <li class="ml-3 mr-auto">
                     <a href="./">
                         <img src="../Logo/MyLogo.png" alt="" class="w-32" />
                     </a>
@@ -37,7 +37,7 @@
                         <i class="fa-solid fa-mobile-screen">Contact</i>
                     </a>
                 </li>
-                <li class="ml-auto">
+                <li class="ml-auto mr-8">
                     <a
                         href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLqQfxbthQMhRSDPFMSlTzVbFxQTLpxrZQmPCVZWXsWcczsgxtMBBnXMtsrsHNmZwNZg"
                         target="_blank"
@@ -49,5 +49,31 @@
                 </li>
             </ul>
         </nav>
+        <div id="home" class="py-10 flex justify-center items-center">
+            <div class="w-1/2 flex flex-col items-center">
+                <div>
+                    <div class="text-gray-200 text-3xl">
+                        Hello I'm Tran Quang Thang
+                    </div>
+                    <div class="text-5xl mt-4 mb-10 font-bold">
+                        I like technology and enjoy doing front-end web
+                        development
+                    </div>
+                </div>
+                <a
+                    href="#about"
+                    class="bg-white text-black px-4 py-2 rounded-3xl"
+                >
+                    See more
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <div
+                    class="w-80 h-80 bg-orange-500 rounded-full flex justify-center items-center overflow-hidden"
+                >
+                    <img src="../Images/MyPhoto.png" alt="" class="w-72" />
+                </div>
+            </div>
+        </div>
     </body>
 </html>
