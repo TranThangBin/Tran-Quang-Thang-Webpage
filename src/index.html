@@ -16,9 +16,9 @@
     <body class="bg-main text-white">
         <nav id="nav" class="fixed w-full top-0">
             <ul
-                class="bg-main h-40 flex items-center gap-10 text-lg tracking-widest after:w-11/12 after:h-1 after:bg-white after:absolute after:bottom-0 after:right-1/2 after:translate-x-1/2"
+                class="bg-main h-40 flex items-center text-lg tracking-widest after:w-11/12 after:h-1 after:bg-white after:absolute after:bottom-0 after:right-1/2 after:translate-x-1/2"
             >
-                <li class="ml-3 mr-auto">
+                <li class="mx-auto">
                     <a href="">
                         <img
                             src="Logo/MyLogo.png"
@@ -27,36 +27,28 @@
                         />
                     </a>
                 </li>
-                <li>
-                    <a href="#home">
-                        <i class="fa-solid fa-house-chimney">Home</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        <i class="fa-solid fa-address-card">About</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#project">
-                        <i class="fa-solid fa-chart-simple">Project</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <i class="fa-solid fa-mobile-screen">Contact</i>
-                    </a>
-                </li>
-                <li class="ml-auto mr-8">
-                    <a
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLqQfxbthQMhRSDPFMSlTzVbFxQTLpxrZQmPCVZWXsWcczsgxtMBBnXMtsrsHNmZwNZg"
-                        target="_blank"
-                    >
-                        <i class="fa-regular fa-envelope"
-                            >thangdev04@gmail.com
-                        </i>
-                    </a>
-                </li>
+                <ul class="flex gap-10 mx-auto">
+                    <li>
+                        <a href="#home">
+                            <i class="fa-solid fa-house-chimney">Home</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class="fa-solid fa-address-card">About</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project">
+                            <i class="fa-solid fa-chart-simple">Project</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-solid fa-mobile-screen">Contact</i>
+                        </a>
+                    </li>
+                </ul>
             </ul>
         </nav>
         <div id="home" class="mt-40 flex justify-center items-center">
@@ -94,12 +86,13 @@
             <div class="w-1/2 flex flex-col items-center">
                 <div class="text-5xl font-bold">About me</div>
                 <div class="w-10/12 m-5 text-gray-300 text-3xl font-semibold">
-                    I'm a first-year student learning Software Engineering at
-                    Van Lang University in Vietnam. I have some experiences
-                    doing front-end web development with HTML, CSS, JS and
-                    TailwindCSS. I'm passionate about creating the best product
-                    that reflect my skill and studyting hard to become an
-                    amazing Software Engineer.
+                    I'm a&nbsp;<span id="collegeYear"></span>&nbsp;student
+                    learning Software Engineering at Van Lang University in
+                    Vietnam. I have some experiences doing front-end web
+                    development with HTML, CSS, JS and TailwindCSS. I'm
+                    passionate about creating the best product that reflect my
+                    skill and studyting hard to become an amazing Software
+                    Engineer.
                 </div>
                 <a
                     href="#project"
@@ -112,7 +105,7 @@
         <div id="contact" class="flex flex-col justify-center items-center">
             <div class="text-5xl font-bold mb-4">Contact me on my socials</div>
             <div
-                class="bg-white w-11/12 h-80 flex justify-evenly items-center text-9xl shadow-inner shadow-black"
+                class="bg-white w-11/12 h-64 flex justify-evenly items-center text-9xl shadow-inner shadow-black"
             >
                 <a
                     href="https://www.facebook.com/profile.php?id=100075376731081&mibextid=ZbWKwL"
@@ -140,7 +133,8 @@
         <footer
             class="h-32 bg-gray-900 flex justify-center items-center text-lg font-semibold"
         >
-            Copyright © 2023 Tran Quang Thang. All rights reserved.
+            Copyright ©&nbsp;<span id="copyrightYear"></span>&nbsp;Tran Quang
+            Thang. All rights reserved.
         </footer>
     </body>
 </html>
