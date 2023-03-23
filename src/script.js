@@ -23,3 +23,33 @@ function setHeightAll() {
     setHeight(aboutElement);
     setHeight(contactElement);
 }
+
+//-------------------------------------------------------------------------------
+
+setCollegeYear();
+setCopyrightYear();
+
+function setCollegeYear() {
+    const collegeYearElement = document.getElementById("collegeYear");
+    const currentDate = new Date();
+    const startYear = 2022;
+    const startMonthIndex = 8;
+    let collegeYear = currentDate.getFullYear() - startYear;
+    const displayText = [
+        "first-year",
+        "second-year",
+        "third-year",
+        "fourth-year",
+        "graduated",
+    ];
+    if (currentDate.getMonth() < startMonthIndex) collegeYear--;
+    if (collegeYear < 4)
+        collegeYearElement.innerText = displayText[collegeYear];
+    else collegeYearElement.innerText = displayText[4];
+}
+
+function setCopyrightYear() {
+    const copyrightYearElement = document.getElementById("copyrightYear");
+    const currentDate = new Date();
+    copyrightYearElement.innerText = currentDate.getFullYear();
+}

@@ -525,6 +525,15 @@ video {
   margin: 1.25rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
