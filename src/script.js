@@ -53,3 +53,18 @@ function setCopyrightYear() {
     const currentDate = new Date();
     copyrightYearElement.innerText = currentDate.getFullYear();
 }
+
+//-------------------------------------------------------------------------------
+
+const hamburgerBtn = document.getElementById("hamburger");
+
+hamburgerBtn.addEventListener("click", hamburger);
+
+function hamburger() {
+    const hamburgerBar = hamburgerBtn.getElementsByTagName("div");
+    hamburgerBar[0].classList.toggle("transform-hamburger-top");
+    hamburgerBar[1].classList.toggle("transform-hamburger-center");
+    hamburgerBar[2].classList.toggle("transform-hamburger-bottom");
+    const hiddenMenu = document.getElementById("hiddenMenu");
+    hiddenMenu.classList.toggle("right-1/2");
+}
