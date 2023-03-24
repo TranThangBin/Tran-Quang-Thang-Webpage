@@ -13,45 +13,43 @@
         <script defer src="script.js"></script>
         <title>Tran Quang Thang</title>
     </head>
-    <body class="bg-main text-white">
+    <body class="right-1/2 bg-main text-white">
+        <!--right-1/2 to generate the 
+            class for the hidden menu-->
         <nav
             id="nav"
             class="bg-main fixed w-full top-0 text-lg tracking-widest after:bottom-0 after:w-11/12 after:h-1 after:bg-white after:absolute after:right-1/2 after:translate-x-1/2"
         >
             <ul class="flex items-center">
                 <li class="mx-auto">
-                    <a href="">
-                        <img
-                            src="Logo/MyLogo.png"
-                            alt=""
-                            class="min-w-[8rem] max-w-[8rem]"
-                        />
+                    <a href="" title="Tran Quang Thang">
+                        <img src="Logo/MyLogo.png" alt="" class="w-32" />
                     </a>
                 </li>
                 <li
                     id="hiddenMenu"
-                    class="flex justify-center md:w-fit md:h-fit md:border-0 md:block md:static w-1/2 h-[calc(100vh-8rem)] fixed right-full bottom-0 mx-auto bg-main border-r-4 border-b-4 transition-all duration-300"
+                    class="flex justify-center md:w-auto md:h-auto md:border-0 md:block md:static w-1/2 h-[calc(100vh-8rem)] fixed right-full top-32 mx-auto bg-main border-r-4 border-b-4 transition-all duration-300"
                 >
                     <ul
                         class="flex md:flex-row md:gap-10 flex-col justify-evenly"
                     >
                         <li>
-                            <a href="#home">
+                            <a href="#home" title="Go to home">
                                 <i class="fa-solid fa-house-chimney">Home</i>
                             </a>
                         </li>
                         <li>
-                            <a href="#about">
+                            <a href="#about" title="Go to about">
                                 <i class="fa-solid fa-address-card">About</i>
                             </a>
                         </li>
                         <li>
-                            <a href="#project">
+                            <a href="#project" title="Go to project">
                                 <i class="fa-solid fa-chart-simple">Project</i>
                             </a>
                         </li>
                         <li>
-                            <a href="#contact">
+                            <a href="#contact" title="Go to contact">
                                 <i class="fa-solid fa-mobile-screen">Contact</i>
                             </a>
                         </li>
@@ -91,6 +89,7 @@
                 <a
                     href="#about"
                     class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
+                    title="See more"
                 >
                     See more
                 </a>
@@ -123,6 +122,7 @@
                 <a
                     href="#project"
                     class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
+                    title="See past project"
                 >
                     See my past project
                 </a>
@@ -136,21 +136,28 @@
                 <a
                     href="https://www.facebook.com/profile.php?id=100075376731081&mibextid=ZbWKwL"
                     target="_blank"
+                    title="To my Facebook"
                 >
                     <i class="text-facebook fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://github.com/TranThangBin" target="_blank"
-                    ><i class="text-github fa-brands fa-github"></i
-                ></a>
+                <a
+                    href="https://github.com/TranThangBin"
+                    target="_blank"
+                    title="To my Github"
+                >
+                    <i class="text-github fa-brands fa-github"></i>
+                </a>
                 <a
                     href="https://www.linkedin.com/in/trần-quang-thắng-524933257/"
                     target="_blank"
+                    title="To my LinkedIn"
                 >
                     <i class="text-linkedin fa-brands fa-linkedin"></i>
                 </a>
                 <a
                     href="https://www.instagram.com/tranquang.thang.100/"
                     target="_blank"
+                    title="To my Instagram"
                 >
                     <i class="text-instagram fa-brands fa-instagram"></i>
                 </a>
