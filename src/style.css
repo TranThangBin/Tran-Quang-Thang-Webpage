@@ -521,8 +521,8 @@ video {
   position: absolute;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.right-1\/2 {
+  right: 50%;
 }
 
 .right-8 {
@@ -537,16 +537,8 @@ video {
   top: 0px;
 }
 
-.right-1\/2 {
-  right: 50%;
-}
-
 .top-32 {
   top: 8rem;
-}
-
-.-right-1\/2 {
-  right: -50%;
 }
 
 .m-5 {
@@ -587,10 +579,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-1 {
   height: 0.25rem;
 }
@@ -611,8 +599,12 @@ video {
   height: 24rem;
 }
 
-.h-\[calc\(100vh-8rem\)\] {
-  height: calc(100vh - 8rem);
+.h-\[calc\(100dvh-8rem\)\] {
+  height: calc(100dvh - 8rem);
+}
+
+.h-menuRes {
+  height: calc(100dvh - 8rem);
 }
 
 .w-1\/2 {
@@ -651,12 +643,12 @@ video {
   scroll-padding-top: 10rem;
 }
 
-.scroll-pt-32 {
-  scroll-padding-top: 8rem;
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -746,6 +738,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -756,13 +752,23 @@ video {
   line-height: 1;
 }
 
-.text-9xl {
-  font-size: 8rem;
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -910,6 +916,23 @@ video {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:static {
     position: static;
@@ -923,18 +946,8 @@ video {
     display: none;
   }
 
-  .md\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
   .md\:h-auto {
     height: auto;
-  }
-
-  .md\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
   }
 
   .md\:w-auto {
@@ -951,5 +964,39 @@ video {
 
   .md\:border-0 {
     border-width: 0px;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }

@@ -38,5 +38,5 @@ function hamburger() {
     hamburgerBar[1].classList.toggle("transform-hamburger-center");
     hamburgerBar[2].classList.toggle("transform-hamburger-bottom");
     const hiddenMenu = document.getElementById("hiddenMenu");
-    hiddenMenu.classList.toggle("right-1/2");
+    hiddenMenu.classList.toggle("right-full");
 }
