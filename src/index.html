@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-40">
+<html lang="en" class="scroll-smooth scroll-p-40">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,11 +46,6 @@
                                 <i class="fa-solid fa-chart-simple">Project</i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#contact" title="Go to contact">
-                                <i class="fa-solid fa-mobile-screen">Contact</i>
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li class="md:hidden block absolute right-8">
@@ -75,7 +70,7 @@
         </nav>
         <div
             id="home"
-            class="mt-40 flex lg:flex-row justify-center items-center flex-col-reverse"
+            class="lg:py-16 py-8 mt-40 flex lg:flex-row justify-center items-center flex-col-reverse"
         >
             <div
                 class="lg:w-1/2 lg:text-left flex flex-col items-center text-center"
@@ -107,12 +102,12 @@
         </div>
         <div
             id="about"
-            class="flex lg:flex-row justify-center items-center flex-col"
+            class="lg:py-16 py-8 flex lg:flex-row justify-center items-center flex-col"
         >
             <img
                 src="Images/MyOtherPhoto.jpg"
                 alt=""
-                class="h-96 rounded-r-full border-4"
+                class="h-96 lg:rounded-r-full lg:rounded-tl-none rounded-t-full border-4"
             />
             <div class="lg:w-1/2 flex flex-col items-center">
                 <div class="text-5xl font-bold">About me</div>
@@ -136,50 +131,52 @@
                 </a>
             </div>
         </div>
-        <div id="contact" class="flex flex-col justify-center items-center">
-            <div
-                class="md:text-5xl sm:text-4xl text-3xl text-center font-bold mb-4"
-            >
-                Contact me on my socials
-            </div>
-            <div
-                class="bg-white w-11/12 h-64 flex justify-evenly items-center md:text-9xl sm:text-8xl text-7xl shadow-inner shadow-black"
-            >
-                <a
-                    href="https://www.facebook.com/profile.php?id=100075376731081&mibextid=ZbWKwL"
-                    target="_blank"
-                    title="To my Facebook"
-                >
-                    <i class="text-facebook fa-brands fa-facebook"></i>
-                </a>
-                <a
-                    href="https://github.com/TranThangBin"
-                    target="_blank"
-                    title="To my Github"
-                >
-                    <i class="text-github fa-brands fa-github"></i>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/trần-quang-thắng-524933257/"
-                    target="_blank"
-                    title="To my LinkedIn"
-                >
-                    <i class="text-linkedin fa-brands fa-linkedin"></i>
-                </a>
-                <a
-                    href="https://www.instagram.com/tranquang.thang.100/"
-                    target="_blank"
-                    title="To my Instagram"
-                >
-                    <i class="text-instagram fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </div>
         <footer
-            class="h-32 bg-gray-900 flex justify-center items-center md:text-lg sm:text-md text-sm font-semibold"
+            class="py-8 bg-gray-900 flex flex-col justify-center items-center md:text-3xl sm:text-2xl text-xl font-semibold"
         >
-            Copyright ©&nbsp;<span id="copyrightYear"></span>&nbsp;Tran Quang
-            Thang. All rights reserved.
+            <div class="md:text-lg sm:text-sm text-xs">
+                Copyright ©&nbsp;<span id="copyrightYear"></span>&nbsp;Tran
+                Quang Thang. All rights reserved.
+            </div>
+            <div>Contact me on my socials</div>
+            <ul class="flex gap-5">
+                <li>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100075376731081&mibextid=ZbWKwL"
+                        target="_blank"
+                        title="To my Facebook"
+                    >
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/TranThangBin"
+                        target="_blank"
+                        title="To my Github"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/trần-quang-thắng-524933257/"
+                        target="_blank"
+                        title="To my LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.instagram.com/tranquang.thang.100/"
+                        target="_blank"
+                        title="To my Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
