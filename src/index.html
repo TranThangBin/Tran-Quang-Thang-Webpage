@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-p-40">
+<html lang="en" class="scroll-smooth scroll-p-32">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="Logo/MyLogo.png" />
+        <link rel="icon" href="./Logo/MyLogo.ico" />
         <script defer src="script.js"></script>
         <title>Tran Quang Thang</title>
     </head>
@@ -21,15 +21,15 @@
             <ul class="flex items-center">
                 <li class="mx-auto">
                     <a href="" title="Tran Quang Thang">
-                        <img src="Logo/MyLogo.png" alt="" class="w-32" />
+                        <img src="./Logo/NoBgLogo.png" alt="" class="h-32" />
                     </a>
                 </li>
                 <li
                     id="hiddenMenu"
-                    class="flex justify-center md:w-auto md:h-auto md:border-0 md:block md:static w-1/2 h-menuRes fixed right-full right-1/2 top-32 mx-auto bg-main border-r-4 border-b-4 transition-all duration-300"
+                    class="flex justify-center sm:w-auto sm:h-auto sm:border-0 sm:block sm:static w-1/2 h-view_minus_nav fixed right-full right-1/2 top-32 mx-auto bg-main border-r-4 border-b-4 transition-all duration-300"
                 >
                     <ul
-                        class="flex md:flex-row md:gap-10 flex-col justify-evenly"
+                        class="flex sm:flex-row sm:gap-10 flex-col justify-evenly"
                     >
                         <li>
                             <a href="#home" title="Go to home">
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="md:hidden block absolute right-8">
+                <li class="sm:hidden block absolute right-8">
                     <button
                         id="hamburger"
                         class="hover:bg-white group p-2 border-2 rounded-md transition-colors"
@@ -68,115 +68,120 @@
                 </li>
             </ul>
         </nav>
-        <div
-            id="home"
-            class="lg:py-16 py-8 mt-40 flex lg:flex-row justify-center items-center flex-col-reverse"
-        >
-            <div
-                class="lg:w-1/2 lg:text-left flex flex-col items-center text-center"
+        <main class="mt-32">
+            <section
+                id="home"
+                class="py-8 flex lg:flex-row justify-center items-center flex-col-reverse"
             >
-                <div>
-                    <div class="text-gray-200 text-3xl">
-                        Hello I'm Tran Quang Thang
-                    </div>
-                    <div class="text-5xl mt-4 mb-10 font-bold">
-                        I like technology and enjoy doing front-end web
-                        development
-                    </div>
-                </div>
-                <a
-                    href="#about"
-                    class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
-                    title="See more"
-                >
-                    See more
-                </a>
-            </div>
-            <div class="flex justify-center">
                 <div
-                    class="w-80 h-80 bg-orange-500 rounded-full flex justify-center items-center overflow-hidden"
+                    class="lg:w-1/2 lg:text-left flex flex-col items-center text-center"
                 >
-                    <img src="Images/MyPhoto.png" alt="" class="w-72" />
+                    <div>
+                        <h1 class="text-gray-200 text-3xl my-5">
+                            Hello I'm Tran Quang Thang
+                        </h1>
+                        <p class="text-5xl font-bold">
+                            I like technology and enjoy doing front-end web
+                            development
+                        </p>
+                    </div>
+                    <a
+                        href="#about"
+                        class="bg-white text-black font-semibold px-4 py-2 my-5 rounded-3xl"
+                        title="See more"
+                    >
+                        See more
+                    </a>
                 </div>
-            </div>
-        </div>
-        <div
-            id="about"
-            class="lg:py-16 py-8 flex lg:flex-row justify-center items-center flex-col"
-        >
-            <img
-                src="Images/MyOtherPhoto.jpg"
-                alt=""
-                class="h-96 lg:rounded-r-full lg:rounded-tl-none rounded-t-full border-4"
-            />
-            <div class="lg:w-1/2 flex flex-col items-center">
-                <div class="text-5xl font-bold">About me</div>
-                <div
-                    class="w-10/12 m-5 text-gray-300 md:text-3xl sm:text-2xl text-xl font-semibold"
-                >
-                    I'm a&nbsp;<span id="collegeYear"></span>&nbsp;student
-                    learning Software Engineering at Van Lang University in
-                    Vietnam. I have some experiences doing front-end web
-                    development with HTML, CSS, JS and TailwindCSS. I'm
-                    passionate about creating the best product that reflect my
-                    skill and studyting hard to become an amazing Software
-                    Engineer.
+                <div class="flex justify-center">
+                    <div
+                        class="w-80 h-80 bg-orange-500 rounded-full flex justify-center items-center overflow-hidden"
+                    >
+                        <img src="./Images/MyPhoto.png" alt="" class="w-72" />
+                    </div>
                 </div>
-                <a
-                    href="#project"
-                    class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
-                    title="See past project"
-                >
-                    See my past project
-                </a>
-            </div>
-        </div>
+            </section>
+            <section
+                id="about"
+                class="py-8 flex lg:flex-row justify-center items-center flex-col"
+            >
+                <img
+                    src="./Images/MyOtherPhoto.jpg"
+                    alt=""
+                    class="h-96 lg:rounded-r-full lg:rounded-tl-none rounded-t-full border-4"
+                />
+                <div class="lg:w-1/2 flex flex-col items-center">
+                    <h1 class="text-5xl font-bold my-5">About me</h1>
+                    <p
+                        class="w-10/12 text-gray-300 md:text-3xl sm:text-2xl text-xl font-semibold"
+                    >
+                        I'm a&nbsp;<span id="collegeYear"></span>&nbsp;student
+                        learning Software Engineering at Van Lang University in
+                        Vietnam. I have some experiences doing front-end web
+                        development with HTML, CSS, JS and TailwindCSS. I'm
+                        passionate about creating the best product that reflect
+                        my skill and studyting hard to become an amazing
+                        Software Engineer.
+                    </p>
+                    <a
+                        href="#project"
+                        class="bg-white text-black font-semibold px-4 py-2 my-5 rounded-3xl"
+                        title="See past project"
+                    >
+                        See my past project
+                    </a>
+                </div>
+            </section>
+            <section id="project" class="py-8"></section>
+        </main>
         <footer
             class="py-8 bg-gray-900 flex flex-col justify-center items-center md:text-3xl sm:text-2xl text-xl font-semibold"
         >
-            <div class="md:text-lg sm:text-sm text-xs">
+            <p class="md:text-lg sm:text-sm text-xs">
                 Copyright ©&nbsp;<span id="copyrightYear"></span>&nbsp;Tran
                 Quang Thang. All rights reserved.
-            </div>
-            <div>Contact me on my socials</div>
-            <ul class="flex gap-5">
-                <li>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100075376731081&mibextid=ZbWKwL"
-                        target="_blank"
-                        title="To my Facebook"
-                    >
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/TranThangBin"
-                        target="_blank"
-                        title="To my Github"
-                    >
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/trần-quang-thắng-524933257/"
-                        target="_blank"
-                        title="To my LinkedIn"
-                    >
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.instagram.com/tranquang.thang.100/"
-                        target="_blank"
-                        title="To my Instagram"
-                    >
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
+            </p>
+            <h1>Contact me on my socials</h1>
+            <nav>
+                <ul class="flex gap-5">
+                    <li>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100075376731081&mibextid=ZbWKwL"
+                            target="_blank"
+                            title="To my Facebook"
+                        >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/TranThangBin"
+                            target="_blank"
+                            title="To my Github"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/trần-quang-thắng-524933257/"
+                            target="_blank"
+                            title="To my LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.instagram.com/tranquang.thang.100/"
+                            target="_blank"
+                            title="To my Instagram"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>
