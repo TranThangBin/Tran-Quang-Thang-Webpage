@@ -30,9 +30,15 @@ function setCopyrightYear() {
 
 const hamburgerBtn = document.getElementById("hamburger");
 
-hamburgerBtn.addEventListener("click", hamburger);
+const navLinks = document.querySelectorAll("[data-nav-links]");
 
-function hamburger() {
+hamburgerBtn.addEventListener("click", toggleMenu);
+
+navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", toggleMenu);
+});
+
+function toggleMenu() {
     const hamburgerBar = hamburgerBtn.getElementsByTagName("div");
     hamburgerBar[0].classList.toggle("transform-hamburger-top");
     hamburgerBar[1].classList.toggle("transform-hamburger-center");
