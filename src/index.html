@@ -146,54 +146,52 @@
                     action=""
                     method=""
                     autocomplete="off"
-                    class="flex flex-col items-center gap-4 text-xl"
+                    class="grid md:grid-cols-3 grid-cols-2 items-center gap-2 text-xl"
                 >
-                    <div class="flex md:flex-row flex-col gap-2">
-                        <div class="flex flex-col gap-2">
-                            <div class="flex sm:flex-row flex-col gap-2">
-                                <div class="flex flex-col">
-                                    <label for="first-name">First Name:</label>
-                                    <input
-                                        type="text"
-                                        placeholder="First name"
-                                        class="bg-transparent outline-none border-2 p-2"
-                                        name="first-name"
-                                    />
-                                </div>
-                                <div class="flex flex-col">
-                                    <label for="last-name">Last Name:</label>
-                                    <input
-                                        type="text"
-                                        placeholder="Last name"
-                                        class="bg-transparent outline-none border-2 p-2"
-                                        name="last-name"
-                                    />
-                                </div>
-                            </div>
-                            <div class="w-full flex flex-col">
-                                <label for="email">Email:</label>
-                                <input
-                                    type="text"
-                                    placeholder="Email"
-                                    class="bg-transparent outline-none border-2 p-2"
-                                    name="email"
-                                />
-                            </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <label for="message">Message:</label>
-                            <textarea
-                                placeholder="Message"
-                                class="h-full bg-transparent outline-none border-2 p-2 resize-none"
-                                name="message"
-                            ></textarea>
-                        </div>
+                    <div class="flex flex-col sm:col-span-1 col-span-2">
+                        <label for="first-name">First Name:</label>
+                        <input
+                            type="text"
+                            placeholder="First name"
+                            class="bg-transparent outline-none border-2 p-2"
+                            name="first-name"
+                        />
                     </div>
-                    <input
-                        type="submit"
-                        value="Submit"
-                        class="px-4 py-2 bg-red-600 border-2 rounded-3xl cursor-pointer"
-                    />
+                    <div class="flex flex-col sm:col-span-1 col-span-2">
+                        <label for="last-name">Last Name:</label>
+                        <input
+                            type="text"
+                            placeholder="Last name"
+                            class="bg-transparent outline-none border-2 p-2"
+                            name="last-name"
+                        />
+                    </div>
+                    <div class="w-full flex flex-col col-span-2 order-4">
+                        <label for="email">Email:</label>
+                        <input
+                            type="text"
+                            placeholder="Email"
+                            class="bg-transparent outline-none border-2 p-2"
+                            name="email"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col row-span-2 md:col-span-1 col-span-2 md:order-3 order-4"
+                    >
+                        <label for="message">Message:</label>
+                        <textarea
+                            placeholder="Message"
+                            class="h-full bg-transparent outline-none border-2 p-2 resize-none"
+                            name="message"
+                        ></textarea>
+                    </div>
+                    <div class="flex justify-center col-span-3 order-last">
+                        <input
+                            type="submit"
+                            value="Submit"
+                            class="px-4 py-2 bg-red-600 border-2 rounded-3xl cursor-pointer"
+                        />
+                    </div>
                 </form>
             </section>
         </main>
