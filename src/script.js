@@ -30,7 +30,7 @@ function setCopyrightYear() {
 
 const hamburgerBtn = document.getElementById("hamburger");
 
-const navLinks = document.querySelectorAll("[data-nav-links]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
 
 hamburgerBtn.addEventListener("click", toggleMenu);
 
@@ -43,6 +43,6 @@ function toggleMenu() {
     hamburgerBar[0].classList.toggle("transform-hamburger-top");
     hamburgerBar[1].classList.toggle("transform-hamburger-center");
     hamburgerBar[2].classList.toggle("transform-hamburger-bottom");
-    const hiddenMenu = document.getElementById("hiddenMenu");
-    hiddenMenu.classList.toggle("right-full");
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("right-full");
 }

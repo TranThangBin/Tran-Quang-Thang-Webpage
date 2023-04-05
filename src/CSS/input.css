@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transform-hamburger-top {
+    @apply translate-y-2 rotate-45;
+}
+.transform-hamburger-center {
+    @apply scale-0;
+}
+.transform-hamburger-bottom {
+    @apply translate-y-[-0.5rem] rotate-[-45deg];
+}

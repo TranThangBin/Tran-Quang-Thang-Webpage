@@ -1,0 +1,16 @@
+{
+    "name": "mywebpage",
+    "version": "1.0.0",
+    "description": "Tran Quang Thang Webpage",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "npx tailwindcss -i ./src/CSS/input.css -o ./src/CSS/style.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "tailwindcss": "^3.2.7"
+    }
+}
