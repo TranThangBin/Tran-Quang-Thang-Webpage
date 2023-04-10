@@ -1019,8 +1019,8 @@ video {
     flex-direction: row;
   }
 
-  .md\:justify-start {
-    justify-content: flex-start;
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:gap-x-10 {

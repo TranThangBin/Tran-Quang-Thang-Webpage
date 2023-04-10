@@ -32,13 +32,13 @@ const hamburgerBtn = document.getElementById("hamburger");
 
 const navLinks = document.querySelectorAll("[data-nav-link]");
 
-hamburgerBtn.addEventListener("click", toggleMenu);
+hamburgerBtn.addEventListener("click", toggleSidebar);
 
 navLinks.forEach((navLink) => {
-    navLink.addEventListener("click", toggleMenu);
+    navLink.addEventListener("click", toggleSidebar);
 });
 
-function toggleMenu() {
+function toggleSidebar() {
     const hamburgerBar = hamburgerBtn.getElementsByTagName("div");
     hamburgerBar[0].classList.toggle("transform-hamburger-top");
     hamburgerBar[1].classList.toggle("transform-hamburger-center");
