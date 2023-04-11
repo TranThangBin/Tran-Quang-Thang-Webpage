@@ -9,5 +9,5 @@
     @apply scale-0;
 }
 .transform-hamburger-bottom {
-    @apply translate-y-[-0.5rem] rotate-[-45deg];
+    @apply -translate-y-2 -rotate-45;
 }
