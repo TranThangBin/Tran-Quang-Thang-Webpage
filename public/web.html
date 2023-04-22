@@ -15,18 +15,22 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
         <link rel="stylesheet" href="../dist/style.css" />
-        <link rel="icon" href="./Logo/MyLogo.ico" />
-        <script defer src="script.js"></script>
+        <link rel="icon" href="./icon/Logo/MyLogo.ico" />
+        <script defer src="../dist/script.js"></script>
         <title>Tran Quang Thang</title>
     </head>
     <body class="bg-main text-white">
         <nav
             class="bg-main fixed w-full h-32 flex items-center top-0 after:bottom-0 after:w-11/12 after:h-1 after:bg-white after:absolute after:right-1/2 after:translate-x-1/2"
         >
-            <img src="./Logo/NoBgLogo.png" alt="" class="h-32 mx-auto" />
+            <img
+                src="./icon/Logo/NoBgLogo.png"
+                alt="Brand Logo"
+                class="h-32 mx-auto"
+            />
             <ul
                 id="sidebar"
-                class="md:w-sidebar_list w-1/2 md:h-auto h-view_minus_nav md:mx-auto bg-main md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
+                class="md:w-sidebar_list w-1/2 md:h-auto h-view_minus_nav md:mx-auto text-lg bg-main md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
             >
                 <li>
                     <a data-nav-link href="#home" title="Go to home">
@@ -100,7 +104,11 @@
                     <div
                         class="w-80 h-80 bg-orange-500 rounded-full flex justify-center items-center overflow-hidden"
                     >
-                        <img src="./Images/MyPhoto.png" alt="" class="w-72" />
+                        <img
+                            src="./Images/personal-photo/MyPhoto.png"
+                            alt="Tran Quang Thang holding a coffee cup"
+                            class="w-72"
+                        />
                     </div>
                 </div>
             </section>
@@ -109,8 +117,8 @@
                 class="flex lg:flex-row justify-center items-center flex-col"
             >
                 <img
-                    src="./Images/MyOtherPhoto.jpg"
-                    alt=""
+                    src="./Images/personal-photo/MyOtherPhoto.jpg"
+                    alt="Tran Quang Thang sitting on a swing"
                     class="h-96 lg:rounded-r-full lg:rounded-tl-none rounded-t-full border-4"
                 />
                 <div class="lg:w-1/2 flex flex-col items-center">
@@ -120,11 +128,9 @@
                     >
                         I'm a&nbsp;<span id="collegeYear"></span>&nbsp;student
                         learning Software Engineering at Van Lang University in
-                        Vietnam. I have some experiences doing front-end web
-                        development with HTML, CSS, JS and TailwindCSS. I'm
-                        passionate about creating the best product that reflect
-                        my skill and studyting hard to become an amazing
-                        Software Engineer.
+                        Vietnam. I'm passionate about creating the best product
+                        that reflect my skill and studyting hard to become an
+                        amazing Software Engineer.
                     </p>
                     <a
                         href="#skills"
@@ -135,15 +141,96 @@
                     </a>
                 </div>
             </section>
-            <section id="skills"></section>
+            <section
+                id="skills"
+                class="flex justify-center items-center flex-col"
+            >
+                <h1 class="text-4xl font-bold">Skills</h1>
+                <p class="text-2xl text-center font-semibold">
+                    I have experienced in creating:
+                </p>
+                <ul class="w-5/6 grid sm:grid-cols-2 grid-cols-1 gap-5">
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <i class="fab fa-html5 text-4xl text-red-500 mr-5"></i>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">HTML</h2>
+                            <p>Semantic and accessible markup.</p>
+                        </div>
+                    </li>
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <i
+                            class="fab fa-css3-alt text-4xl text-blue-400 mr-5"
+                        ></i>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">CSS</h2>
+                            <p>Responsive and visually appealing designs.</p>
+                        </div>
+                    </li>
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <i
+                            class="fab fa-js-square text-4xl text-yellow-300 mr-5"
+                        ></i>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">JavaScript</h2>
+                            <p>Dynamic and interactive user experiences.</p>
+                        </div>
+                    </li>
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <img
+                            src="./icon/svg/typescript-icon.svg"
+                            alt="TypeScript icon"
+                            class="mr-5"
+                        />
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">TypeScript</h2>
+                            <p>Type-safe and scalable code using TypeScript.</p>
+                        </div>
+                    </li>
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <img
+                            src="./icon/svg/tailwindcss-icon.svg"
+                            alt="TailwindCSS icon"
+                            class="mr-5"
+                        />
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">TailwindCSS</h2>
+                            <p>
+                                Custom designs using utility-first CSS
+                                framework.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <i
+                            class="fab fa-bootstrap text-4xl text-purple-600 mr-5"
+                        ></i>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">Bootstrap</h2>
+                            <p>
+                                Responsive designs using the Bootstrap
+                                framework.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <a
+                    href="#projects"
+                    class="bg-white text-main font-semibold px-4 py-2 rounded-3xl"
+                    title="See my past project"
+                >
+                    Checkout my past projects
+                </a>
+            </section>
             <section id="projects"></section>
-            <section id="contact" class="flex flex-col items-center">
+            <section
+                id="contact"
+                class="flex flex-col items-center"
+            >
                 <h1 class="text-5xl font-bold">Contact me</h1>
                 <form
                     action=""
                     method=""
-                    autocomplete="off"
-                    class="p-8 bg-white grid md:grid-cols-3 grid-cols-2 sm:gap-x-2 gap-x-0 gap-y-2 text-black text-xl font-semibold shadow-inner shadow-black rounded-lg"
+                    class="w-5/6 p-8 bg-gray-100 grid md:grid-cols-3 grid-cols-2 sm:gap-x-2 gap-x-0 gap-y-2 text-gray-700 text-xl font-semibold shadow-inner shadow-black rounded-lg"
                 >
                     <div class="flex flex-col sm:col-span-1 col-span-2">
                         <label for="first-name">First Name:</label>
@@ -152,6 +239,7 @@
                             placeholder="First name"
                             class="outline-none border-2 p-2"
                             name="first-name"
+                            autocomplete="off"
                         />
                     </div>
                     <div class="flex flex-col sm:col-span-1 col-span-2">
@@ -161,6 +249,7 @@
                             placeholder="Last name"
                             class="outline-none border-2 p-2"
                             name="last-name"
+                            autocomplete="off"
                         />
                     </div>
                     <div
@@ -172,6 +261,7 @@
                             placeholder="Email"
                             class="outline-none border-2 p-2"
                             name="email"
+                            autocomplete="off"
                         />
                     </div>
                     <div
@@ -182,13 +272,14 @@
                             placeholder="Message"
                             class="h-full outline-none border-2 p-2 resize-none"
                             name="message"
+                            autocomplete="off"
                         ></textarea>
                     </div>
                     <div class="flex justify-center col-span-3 order-last">
                         <input
                             type="submit"
                             value="Submit"
-                            class="px-4 py-2 text-white bg-red-600 border-4 border-yellow-400 rounded-3xl cursor-pointer"
+                            class="px-4 py-2 text-white bg-red-600 border-4 border-red-400 rounded-3xl cursor-pointer"
                         />
                     </div>
                 </form>

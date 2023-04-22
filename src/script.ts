@@ -1,3 +1,5 @@
+//-Dynamic-Date------------------------------------------------------------------
+
 setCollegeYear();
 setCopyrightYear();
 
@@ -6,7 +8,7 @@ function setCollegeYear() {
     const currentDate = new Date();
     const startYear = 2022;
     const startMonthIndex = 8;
-    let collegeYear = currentDate.getFullYear() - startYear;
+    let collegeYear: number = currentDate.getFullYear() - startYear;
     const displayText = [
         "first-year",
         "second-year",
@@ -14,6 +16,7 @@ function setCollegeYear() {
         "fourth-year",
         "graduated",
     ];
+    if (!collegeYearElement) return;
     if (currentDate.getMonth() < startMonthIndex) collegeYear--;
     if (collegeYear < 4)
         collegeYearElement.innerText = displayText[collegeYear];
@@ -23,26 +26,30 @@ function setCollegeYear() {
 function setCopyrightYear() {
     const copyrightYearElement = document.getElementById("copyrightYear");
     const currentDate = new Date();
-    copyrightYearElement.innerText = currentDate.getFullYear();
+    if (!copyrightYearElement) return;
+    copyrightYearElement.innerText = currentDate.getFullYear().toString();
 }
 
-//-------------------------------------------------------------------------------
+//-HamburgerBtn-Click-Event------------------------------------------------------
 
 const hamburgerBtn = document.getElementById("hamburger");
 
 const navLinks = document.querySelectorAll("[data-nav-link]");
 
-hamburgerBtn.addEventListener("click", toggleSidebar);
+const sidebar = document.getElementById("sidebar");
+
+if (hamburgerBtn) hamburgerBtn.addEventListener("click", toggleSidebar);
 
 navLinks.forEach((navLink) => {
     navLink.addEventListener("click", toggleSidebar);
 });
 
 function toggleSidebar() {
+    if (!hamburgerBtn) return;
+    if (!sidebar) return;
     const hamburgerBar = hamburgerBtn.getElementsByTagName("div");
     hamburgerBar[0].classList.toggle("transform-hamburger-top");
     hamburgerBar[1].classList.toggle("transform-hamburger-center");
     hamburgerBar[2].classList.toggle("transform-hamburger-bottom");
-    const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("right-full");
 }
