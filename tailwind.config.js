@@ -9,7 +9,14 @@ module.exports = {
             width: {
                 sidebar_list: "34.25rem",
             },
-            height: {
+            maxWidth: {
+                64: "16rem",
+                px_2222: "2222px",
+            },
+            maxHeight: {
+                px_2222: "2222px",
+            },
+            minHeight: {
                 view_minus_nav: "calc(100dvh - 8rem)",
             },
         },

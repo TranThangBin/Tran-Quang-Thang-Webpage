@@ -8,7 +8,7 @@ function setCollegeYear() {
     const currentDate = new Date();
     const startYear = 2022;
     const startMonthIndex = 8;
-    let collegeYear: number = currentDate.getFullYear() - startYear;
+    let collegeYear = currentDate.getFullYear() - startYear;
     const displayText = [
         "first-year",
         "second-year",

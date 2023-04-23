@@ -11,3 +11,18 @@
 .transform-hamburger-bottom {
     @apply -translate-y-2 -rotate-45;
 }
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        @apply w-2;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        @apply w-4 bg-gray-600 rounded-full;
+    }
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-400;
+    }
+    .scrollbar::-webkit-scrollbar-thumb:active {
+        @apply bg-gray-500;
+    }
+}

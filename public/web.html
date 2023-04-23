@@ -19,7 +19,7 @@
         <script defer src="../dist/script.js"></script>
         <title>Tran Quang Thang</title>
     </head>
-    <body class="bg-main text-white">
+    <body class="bg-main text-white scrollbar">
         <nav
             class="bg-main fixed w-full h-32 flex items-center top-0 after:bottom-0 after:w-11/12 after:h-1 after:bg-white after:absolute after:right-1/2 after:translate-x-1/2"
         >
@@ -30,7 +30,7 @@
             />
             <ul
                 id="sidebar"
-                class="md:w-sidebar_list w-1/2 md:h-auto h-view_minus_nav md:mx-auto text-lg bg-main md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
+                class="md:w-sidebar_list w-1/2 md:min-h-fit min-h-view_minus_nav md:mx-auto text-lg bg-main md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
             >
                 <li>
                     <a data-nav-link href="#home" title="Go to home">
@@ -60,7 +60,7 @@
             </ul>
             <button
                 id="hamburger"
-                class="md:hidden block absolute right-9 hover:bg-white group p-2 border-2 rounded-md transition-colors"
+                class="md:hidden block absolute right-9 hover:bg-white group p-2 border-2 rounded-md transition-colors duration-300"
                 title="Toggle sidebar"
                 type="button"
             >
@@ -145,9 +145,9 @@
                 id="skills"
                 class="flex justify-center items-center flex-col"
             >
-                <h1 class="text-4xl font-bold">Skills</h1>
-                <p class="text-2xl text-center font-semibold">
-                    I have experienced in creating:
+                <h1 class="text-5xl font-bold">My skills level</h1>
+                <p class="md:text-3xl text-2xl text-center font-semibold">
+                    Technologies I've experienced with:
                 </p>
                 <ul class="w-5/6 grid sm:grid-cols-2 grid-cols-1 gap-5">
                     <li class="bg-gray-700 p-5 rounded-lg flex items-center">
@@ -212,6 +212,15 @@
                             </p>
                         </div>
                     </li>
+                    <li class="bg-gray-700 p-5 rounded-lg flex items-center">
+                        <i
+                            class="fa-brands fa-git-alt text-4xl text-orange-500 mr-5"
+                        ></i>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">Git</h2>
+                            <p>Version control for tracking changes in code.</p>
+                        </div>
+                    </li>
                 </ul>
                 <a
                     href="#projects"
@@ -221,35 +230,126 @@
                     Checkout my past projects
                 </a>
             </section>
-            <section id="projects"></section>
+            <section
+                id="projects"
+                class="flex justify-center items-center flex-col"
+            >
+                <h1 class="text-5xl font-bold">My projects</h1>
+                <p class="md:text-3xl text-2xl text-center font-semibold">
+                    These are projects that I've done
+                </p>
+                <ul class="w-5/6 flex flex-wrap justify-center gap-5">
+                    <li
+                        class="flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-px_2222 lg:focus-within:max-h-64 focus-within:max-h-px_2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
+                    >
+                        <img
+                            src="./images/project-screenshot/project-Steel-Wool-Studios.gif"
+                            alt="Project Steel Wool Studios"
+                            class="w-64 h-64 rounded-2xl"
+                            role="button"
+                            tabindex="0"
+                            title="See more about project Steel Wool Studios"
+                        />
+                        <div
+                            class="lg:mx-4 my-4 flex flex-col justify-evenly items-center"
+                        >
+                            <p class="text-justify text-lg font-semibold mx-2">
+                                In my first semester, I had a group project to
+                                build a replica of an existing web page. I
+                                suggested
+                                <a
+                                    href="https://steelwoolstudios.com/"
+                                    class="text-blue-500"
+                                    title="Check out their page here"
+                                    target="_blank"
+                                >
+                                    Steel Wool Studios
+                                </a>
+                                because I was familiar with them through "Five
+                                Nights at Freddy's" and the rest of the group
+                                agreed. I'm grateful to have teammates like
+                                them.
+                            </p>
+                            <a
+                                href="https://github.com/TranThangBin/VLU-221-Semester-Web-Design-Project"
+                                target="_blank"
+                                class="bg-white text-main font-semibold px-4 py-2 rounded-3xl my-2"
+                                title="Go to Project Steel Wool Studios repos"
+                            >
+                                Project repos here
+                            </a>
+                        </div>
+                    </li>
+                    <li
+                        class="flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-px_2222 lg:focus-within:max-h-64 focus-within:max-h-px_2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
+                    >
+                        <img
+                            src="./images/project-screenshot/project-ECATE.jpg"
+                            alt="Project ECATE"
+                            class="w-64 h-64 rounded-2xl"
+                            role="button"
+                            tabindex="0"
+                            title="See more about project ECATE"
+                        />
+                        <div
+                            class="lg:mx-4 my-4 flex flex-col justify-evenly items-center"
+                        >
+                            <p class="text-justify text-lg font-semibold mx-2">
+                                ECATE is a business project for my mid-semester
+                                English class project. Although the app wasn't
+                                necessary, I volunteered to create it for my
+                                group and I'm glad I did. It helped me practice
+                                my skills in TailwindCSS and TypeScript. I'm
+                                grateful to be part of this team and appreciate
+                                our UI/UX designer
+                                <span class="text-yellow-400">Nhi</span>, who
+                                made the app possible with her design.
+                            </p>
+                            <a
+                                href="https://github.com/TranThangBin/ECATE"
+                                target="_blank"
+                                class="bg-white text-main font-semibold px-4 py-2 rounded-3xl my-2"
+                                title="Go to Project Steel Wool Studios repos"
+                            >
+                                Project repos here
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
             <section
                 id="contact"
-                class="flex flex-col items-center"
+                class="flex flex-col justify-center items-center"
             >
                 <h1 class="text-5xl font-bold">Contact me</h1>
+                <p class="md:text-3xl text-2xl text-center font-semibold">
+                    Directly contact me through email
+                </p>
                 <form
                     action=""
                     method=""
-                    class="w-5/6 p-8 bg-gray-100 grid md:grid-cols-3 grid-cols-2 sm:gap-x-2 gap-x-0 gap-y-2 text-gray-700 text-xl font-semibold shadow-inner shadow-black rounded-lg"
+                    class="w-5/6 p-8 bg-white grid md:grid-cols-3 grid-cols-2 sm:gap-x-2 gap-x-0 gap-y-2 text-black text-xl font-semibold rounded-md shadow-md"
                 >
                     <div class="flex flex-col sm:col-span-1 col-span-2">
                         <label for="first-name">First Name:</label>
                         <input
                             type="text"
-                            placeholder="First name"
+                            placeholder="John"
                             class="outline-none border-2 p-2"
                             name="first-name"
                             autocomplete="off"
+                            spellcheck="false"
                         />
                     </div>
                     <div class="flex flex-col sm:col-span-1 col-span-2">
                         <label for="last-name">Last Name:</label>
                         <input
                             type="text"
-                            placeholder="Last name"
+                            placeholder="Doe"
                             class="outline-none border-2 p-2"
                             name="last-name"
                             autocomplete="off"
+                            spellcheck="false"
                         />
                     </div>
                     <div
@@ -258,10 +358,11 @@
                         <label for="email">Email:</label>
                         <input
                             type="email"
-                            placeholder="Email"
+                            placeholder="johndoe@gmail.com"
                             class="outline-none border-2 p-2"
                             name="email"
                             autocomplete="off"
+                            spellcheck="false"
                         />
                     </div>
                     <div
@@ -269,17 +370,18 @@
                     >
                         <label for="message">Message:</label>
                         <textarea
-                            placeholder="Message"
                             class="h-full outline-none border-2 p-2 resize-none"
+                            placeholder="Hello..."
                             name="message"
                             autocomplete="off"
+                            spellcheck="false"
                         ></textarea>
                     </div>
                     <div class="flex justify-center col-span-3 order-last">
                         <input
                             type="submit"
                             value="Submit"
-                            class="px-4 py-2 text-white bg-red-600 border-4 border-red-400 rounded-3xl cursor-pointer"
+                            class="px-4 py-2 text-white bg-blue-600 rounded-3xl cursor-pointer"
                         />
                     </div>
                 </form>
