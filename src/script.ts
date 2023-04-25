@@ -1,10 +1,13 @@
 //-Dynamic-Date------------------------------------------------------------------
 
+const collegeYearElement = document.getElementById("collegeYear");
+
 setCollegeYear();
+
 setCopyrightYear();
 
 function setCollegeYear() {
-    const collegeYearElement = document.getElementById("collegeYear");
+    if (!collegeYearElement) return;
     const currentDate = new Date();
     const startYear = 2022;
     const startMonthIndex = 8;
@@ -16,7 +19,6 @@ function setCollegeYear() {
         "fourth-year",
         "graduated",
     ];
-    if (!collegeYearElement) return;
     if (currentDate.getMonth() < startMonthIndex) collegeYear--;
     if (collegeYear < 4)
         collegeYearElement.innerText = displayText[collegeYear];
@@ -34,6 +36,8 @@ function setCopyrightYear() {
 
 const hamburgerBtn = document.getElementById("hamburger");
 
+const hamburgerBar = hamburgerBtn?.getElementsByTagName("div");
+
 const navLinks = document.querySelectorAll("[data-nav-link]");
 
 const sidebar = document.getElementById("sidebar");
@@ -46,8 +50,8 @@ navLinks.forEach((navLink) => {
 
 function toggleSidebar() {
     if (!hamburgerBtn) return;
+    if (!hamburgerBar) return;
     if (!sidebar) return;
-    const hamburgerBar = hamburgerBtn.getElementsByTagName("div");
     hamburgerBar[0].classList.toggle("transform-hamburger-top");
     hamburgerBar[1].classList.toggle("transform-hamburger-center");
     hamburgerBar[2].classList.toggle("transform-hamburger-bottom");

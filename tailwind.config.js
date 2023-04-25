@@ -11,7 +11,7 @@ module.exports = {
             },
             maxWidth: {
                 64: "16rem",
-                px_2222: "2222px",
+                screen: "100vw",
             },
             maxHeight: {
                 px_2222: "2222px",
