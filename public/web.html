@@ -19,9 +19,9 @@
         <script defer src="../dist/script.js"></script>
         <title>Tran Quang Thang</title>
     </head>
-    <body class="bg-main text-white scrollbar">
+    <body class="text-white scrollbar bg-starry">
         <nav
-            class="bg-main fixed w-full h-32 flex items-center top-0 after:bottom-0 after:w-11/12 after:h-1 after:bg-white after:absolute after:right-1/2 after:translate-x-1/2"
+            class="bg-starry fixed z-10 w-full h-32 flex items-center top-0 after:bottom-0 after:w-11/12 after:h-1 after:bg-white after:absolute after:right-1/2 after:translate-x-1/2"
         >
             <img
                 src="./icon/Logo/NoBgLogo.png"
@@ -30,7 +30,7 @@
             />
             <ul
                 id="sidebar"
-                class="md:w-sidebar_list w-1/2 md:min-h-fit min-h-view_minus_nav md:mx-auto text-lg bg-main md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
+                class="md:w-sidebar-list w-1/2 md:min-h-fit min-h-view-navless md:mx-auto text-lg md:bg-transparent bg-starry md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
             >
                 <li>
                     <a data-nav-link href="#home" title="Go to home">
@@ -78,23 +78,21 @@
         <main class="mt-32">
             <section
                 id="home"
-                class="flex lg:flex-row justify-center items-center flex-col-reverse"
+                class="min-h-view-navless flex lg:flex-row justify-center items-center flex-col-reverse"
             >
                 <div
-                    class="lg:w-1/2 lg:text-left flex flex-col items-center text-center"
+                    class="lg:w-1/2 lg:text-left flex flex-col items-center lg:gap-4 gap-2 text-center"
                 >
-                    <div>
-                        <h1 class="text-gray-200 md:text-3xl text-2xl">
-                            Hello I'm Tran Quang Thang
-                        </h1>
-                        <p class="md:text-5xl text-4xl font-bold">
-                            I like technology and enjoy doing front-end web
-                            development
-                        </p>
-                    </div>
+                    <h1 class="text-gray-200 md:text-3xl text-2xl lg:mr-auto">
+                        Hello I'm Tran Quang Thang
+                    </h1>
+                    <p class="md:text-5xl text-4xl font-bold">
+                        Technology enthusiast with a passion for learning and
+                        exploring new frontiers!
+                    </p>
                     <a
                         href="#about"
-                        class="bg-white text-main font-semibold px-4 py-2 rounded-3xl"
+                        class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
                         title="See more"
                     >
                         See more
@@ -102,7 +100,7 @@
                 </div>
                 <div class="flex justify-center">
                     <div
-                        class="w-80 h-80 bg-orange-500 rounded-full flex justify-center items-center overflow-hidden"
+                        class="w-80 h-80 border-4 rounded-full flex justify-center items-center overflow-hidden"
                     >
                         <img
                             src="./Images/personal-photo/MyPhoto.png"
@@ -114,14 +112,16 @@
             </section>
             <section
                 id="about"
-                class="flex lg:flex-row justify-center items-center flex-col"
+                class="min-h-view-navless flex lg:flex-row justify-center items-center flex-col"
             >
                 <img
                     src="./Images/personal-photo/MyOtherPhoto.jpg"
                     alt="Tran Quang Thang sitting on a swing"
                     class="h-96 lg:rounded-r-full lg:rounded-tl-none rounded-t-full border-4"
                 />
-                <div class="lg:w-1/2 flex flex-col items-center">
+                <div
+                    class="lg:w-1/2 my-2 flex flex-col items-center lg:gap-4 gap-2"
+                >
                     <h1 class="md:text-5xl text-4xl font-bold">About me</h1>
                     <p
                         class="w-10/12 text-gray-300 md:text-3xl sm:text-2xl text-xl font-semibold"
@@ -130,12 +130,12 @@
                         degree in Software Engineering at Van Lang University in
                         Vietnam. I have a passion for creating high-quality
                         products that showcase my skills and knowledge. I'm also
-                        committed to studying hard and becoming an amazing
-                        Software Engineer.
+                        committed to studying hard and becoming an outstanding
+                        software engineer.
                     </p>
                     <a
                         href="#techs"
-                        class="bg-white text-main font-semibold px-4 py-2 rounded-3xl"
+                        class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
                         title="See techs I use for my projects"
                     >
                         See current techs that I use
@@ -144,7 +144,7 @@
             </section>
             <section
                 id="techs"
-                class="flex justify-center items-center flex-col"
+                class="md:pt-4 md:pb-14 flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">Techs</h1>
                 <p
@@ -227,7 +227,7 @@
                 </ul>
                 <a
                     href="#projects"
-                    class="bg-white text-main font-semibold px-4 py-2 rounded-3xl"
+                    class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
                     title="See my past project"
                 >
                     Checkout my past projects
@@ -235,7 +235,7 @@
             </section>
             <section
                 id="projects"
-                class="flex justify-center items-center flex-col"
+                class="md:py-16 flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">My projects</h1>
                 <p
@@ -245,7 +245,7 @@
                 </p>
                 <ul class="w-5/6 flex flex-wrap justify-center gap-5">
                     <li
-                        class="flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px_2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
+                        class="w-full flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px-2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
                     >
                         <img
                             src="./images/project-screenshot/project-Steel-Wool-Studios.gif"
@@ -277,7 +277,7 @@
                             <a
                                 href="https://github.com/TranThangBin/VLU-221-Semester-Web-Design-Project"
                                 target="_blank"
-                                class="bg-white text-main font-semibold px-4 py-2 rounded-3xl my-2"
+                                class="bg-white text-black font-semibold px-4 py-2 rounded-3xl my-2"
                                 title="Go to Project Steel Wool Studios repos"
                             >
                                 Project repos here
@@ -285,7 +285,7 @@
                         </div>
                     </li>
                     <li
-                        class="flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px_2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
+                        class="w-full flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px-2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
                     >
                         <img
                             src="./images/project-screenshot/project-ECATE.jpg"
@@ -319,7 +319,7 @@
                             <a
                                 href="https://github.com/TranThangBin/ECATE"
                                 target="_blank"
-                                class="bg-white text-main font-semibold px-4 py-2 rounded-3xl my-2"
+                                class="bg-white text-black font-semibold px-4 py-2 rounded-3xl my-2"
                                 title="Go to Project Steel Wool Studios repos"
                             >
                                 Project repos here
@@ -330,7 +330,7 @@
             </section>
             <section
                 id="contact"
-                class="flex flex-col justify-center items-center"
+                class="md:py-16 flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">Contact me</h1>
                 <p
@@ -415,7 +415,7 @@
             </section>
         </main>
         <footer
-            class="py-4 bg-gray-900 flex flex-col items-center md:text-2xl sm:text-1xl text-lg font-semibold"
+            class="relative py-4 flex flex-col items-center md:text-2xl sm:text-1xl text-lg font-semibold before:top-0 before:w-11/12 before:h-1 before:bg-white before:absolute before:right-1/2 before:translate-x-1/2"
         >
             <p class="md:text-lg sm:text-sm text-xs">
                 Copyright © <span id="copyrightYear"></span> Tran Quang Thang.

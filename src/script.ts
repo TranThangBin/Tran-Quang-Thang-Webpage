@@ -2,11 +2,13 @@
 
 const collegeYearElement = document.getElementById("collegeYear");
 
-setCollegeYear();
+const copyrightYearElement = document.getElementById("copyrightYear");
 
-setCopyrightYear();
+setCollegeYear(collegeYearElement);
 
-function setCollegeYear() {
+setCopyrightYear(copyrightYearElement);
+
+function setCollegeYear(collegeYearElement: HTMLElement | null): void {
     if (!collegeYearElement) return;
     const currentDate = new Date();
     const startYear = 2022;
@@ -25,10 +27,9 @@ function setCollegeYear() {
     else collegeYearElement.innerText = displayText[4];
 }
 
-function setCopyrightYear() {
-    const copyrightYearElement = document.getElementById("copyrightYear");
-    const currentDate = new Date();
+function setCopyrightYear(collegeYearElement: HTMLElement | null): void {
     if (!copyrightYearElement) return;
+    const currentDate = new Date();
     copyrightYearElement.innerText = currentDate.getFullYear().toString();
 }
 
@@ -36,20 +37,28 @@ function setCopyrightYear() {
 
 const hamburgerBtn = document.getElementById("hamburger");
 
-const hamburgerBar = hamburgerBtn?.getElementsByTagName("div");
-
 const navLinks = document.querySelectorAll("[data-nav-link]");
 
 const sidebar = document.getElementById("sidebar");
 
-if (hamburgerBtn) hamburgerBtn.addEventListener("click", toggleSidebar);
+if (hamburgerBtn)
+    hamburgerBtn.addEventListener("click", (e: Event): void =>
+        toggleSidebar(e, hamburgerBtn, sidebar)
+    );
 
-navLinks.forEach((navLink) => {
-    navLink.addEventListener("click", toggleSidebar);
-});
+if (navLinks)
+    Array.from(navLinks).forEach((navLink: Element): void => {
+        navLink.addEventListener("click", (e: Event): void =>
+            toggleSidebar(e, hamburgerBtn, sidebar)
+        );
+    });
 
-function toggleSidebar() {
-    if (!hamburgerBtn) return;
+function toggleSidebar(
+    e: Event,
+    hamburgerBtn: HTMLElement | null,
+    sidebar: HTMLElement | null
+): void {
+    const hamburgerBar = hamburgerBtn?.getElementsByTagName("div");
     if (!hamburgerBar) return;
     if (!sidebar) return;
     hamburgerBar[0].classList.toggle("transform-hamburger-top");

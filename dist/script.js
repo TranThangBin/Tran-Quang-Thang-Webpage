@@ -1,9 +1,10 @@
 "use strict";
 //-Dynamic-Date------------------------------------------------------------------
 const collegeYearElement = document.getElementById("collegeYear");
-setCollegeYear();
-setCopyrightYear();
-function setCollegeYear() {
+const copyrightYearElement = document.getElementById("copyrightYear");
+setCollegeYear(collegeYearElement);
+setCopyrightYear(copyrightYearElement);
+function setCollegeYear(collegeYearElement) {
     if (!collegeYearElement)
         return;
     const currentDate = new Date();
@@ -24,26 +25,24 @@ function setCollegeYear() {
     else
         collegeYearElement.innerText = displayText[4];
 }
-function setCopyrightYear() {
-    const copyrightYearElement = document.getElementById("copyrightYear");
-    const currentDate = new Date();
+function setCopyrightYear(collegeYearElement) {
     if (!copyrightYearElement)
         return;
+    const currentDate = new Date();
     copyrightYearElement.innerText = currentDate.getFullYear().toString();
 }
 //-HamburgerBtn-Click-Event------------------------------------------------------
 const hamburgerBtn = document.getElementById("hamburger");
-const hamburgerBar = hamburgerBtn?.getElementsByTagName("div");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const sidebar = document.getElementById("sidebar");
 if (hamburgerBtn)
-    hamburgerBtn.addEventListener("click", toggleSidebar);
-navLinks.forEach((navLink) => {
-    navLink.addEventListener("click", toggleSidebar);
-});
-function toggleSidebar() {
-    if (!hamburgerBtn)
-        return;
+    hamburgerBtn.addEventListener("click", (e) => toggleSidebar(e, hamburgerBtn, sidebar));
+if (navLinks)
+    Array.from(navLinks).forEach((navLink) => {
+        navLink.addEventListener("click", (e) => toggleSidebar(e, hamburgerBtn, sidebar));
+    });
+function toggleSidebar(e, hamburgerBtn, sidebar) {
+    const hamburgerBar = hamburgerBtn?.getElementsByTagName("div");
     if (!hamburgerBar)
         return;
     if (!sidebar)
