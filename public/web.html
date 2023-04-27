@@ -16,12 +16,12 @@
         />
         <link rel="stylesheet" href="../dist/style.css" />
         <link rel="icon" href="./icon/Logo/MyLogo.ico" />
-        <script defer src="../dist/script.js"></script>
+        <script type="module" src="../dist/script.js"></script>
         <title>Tran Quang Thang</title>
     </head>
     <body class="text-white scrollbar bg-starry">
         <nav
-            class="bg-starry fixed z-10 w-full h-32 flex items-center top-0 after:bottom-0 after:w-11/12 after:h-1 after:bg-white after:absolute after:right-1/2 after:translate-x-1/2"
+            class="bg-starry fixed z-10 w-full h-32 flex items-center top-0 border-b-4"
         >
             <img
                 src="./icon/Logo/NoBgLogo.png"
@@ -34,27 +34,27 @@
             >
                 <li>
                     <a data-nav-link href="#home" title="Go to home">
-                        <i class="fa-solid fa-house-chimney">Home</i>
+                        <i class="fa-solid fa-house-chimney">&nbsp;Home</i>
                     </a>
                 </li>
                 <li>
                     <a data-nav-link href="#about" title="Go to about">
-                        <i class="fa-solid fa-address-card">About</i>
+                        <i class="fa-solid fa-address-card">&nbsp;About</i>
                     </a>
                 </li>
                 <li>
                     <a data-nav-link href="#techs" title="Go to techs">
-                        <i class="fa-solid fa-laptop-code">techs</i>
+                        <i class="fa-solid fa-laptop-code">&nbsp;techs</i>
                     </a>
                 </li>
                 <li>
                     <a data-nav-link href="#projects" title="Go to projects">
-                        <i class="fa-solid fa-chart-simple">Projects</i>
+                        <i class="fa-solid fa-chart-simple">&nbsp;Projects</i>
                     </a>
                 </li>
                 <li>
                     <a data-nav-link href="#contact" title="Go to contact">
-                        <i class="fa-solid fa-mobile-screen">Contact</i>
+                        <i class="fa-solid fa-mobile-screen">&nbsp;Contact</i>
                     </a>
                 </li>
             </ul>
@@ -78,7 +78,7 @@
         <main class="mt-32">
             <section
                 id="home"
-                class="min-h-view-navless flex lg:flex-row justify-center items-center flex-col-reverse"
+                class="bg-gradient-to-tl from-[hsl(0,0%,50%,.5)] to-[hsl(0,0%,50%,0)] min-h-view-navless flex lg:flex-row justify-center items-center flex-col-reverse"
             >
                 <div
                     class="lg:w-1/2 lg:text-left flex flex-col items-center lg:gap-4 gap-2 text-center"
@@ -112,7 +112,7 @@
             </section>
             <section
                 id="about"
-                class="min-h-view-navless flex lg:flex-row justify-center items-center flex-col"
+                class="bg-gradient-to-bl from-[hsl(0,0%,50%,.5)] to-[hsl(0,0%,50%,0)] min-h-view-navless flex lg:flex-row justify-center items-center flex-col"
             >
                 <img
                     src="./Images/personal-photo/MyOtherPhoto.jpg"
@@ -144,7 +144,7 @@
             </section>
             <section
                 id="techs"
-                class="md:pt-4 md:pb-14 flex flex-col justify-center items-center lg:gap-4 gap-2"
+                class="flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">Techs</h1>
                 <p
@@ -235,7 +235,7 @@
             </section>
             <section
                 id="projects"
-                class="md:py-16 flex flex-col justify-center items-center lg:gap-4 gap-2"
+                class="md:min-h-view-navless flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">My projects</h1>
                 <p
@@ -250,7 +250,7 @@
                         <img
                             src="./images/project-screenshot/project-Steel-Wool-Studios.gif"
                             alt="Project Steel Wool Studios"
-                            class="w-64 h-64 rounded-2xl"
+                            class="w-64 h-64"
                             role="button"
                             tabindex="0"
                             title="See more about project Steel Wool Studios"
@@ -290,7 +290,7 @@
                         <img
                             src="./images/project-screenshot/project-ECATE.jpg"
                             alt="Project ECATE"
-                            class="w-64 h-64 rounded-2xl"
+                            class="w-64 h-64"
                             role="button"
                             tabindex="0"
                             title="See more about project ECATE"
@@ -330,7 +330,7 @@
             </section>
             <section
                 id="contact"
-                class="md:py-16 flex flex-col justify-center items-center lg:gap-4 gap-2"
+                class="md:min-h-view-navless flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">Contact me</h1>
                 <p
@@ -415,7 +415,7 @@
             </section>
         </main>
         <footer
-            class="relative py-4 flex flex-col items-center md:text-2xl sm:text-1xl text-lg font-semibold before:top-0 before:w-11/12 before:h-1 before:bg-white before:absolute before:right-1/2 before:translate-x-1/2"
+            class="py-4 flex flex-col items-center md:text-2xl sm:text-1xl text-lg font-semibold border-t-4"
         >
             <p class="md:text-lg sm:text-sm text-xs">
                 Copyright © <span id="copyrightYear"></span> Tran Quang Thang.
