@@ -66,3 +66,23 @@ function toggleSidebar(
     hamburgerBar[2].classList.toggle("transform-hamburger-bottom");
     sidebar.classList.toggle("right-full");
 }
+
+//-Centralize-project-image-position-on-click------------------------------------
+
+const projectsSectionElement = document.getElementById("projects");
+
+const projectsImages = projectsSectionElement?.getElementsByTagName("img");
+console.log(projectsImages);
+
+if (projectsImages)
+    Array.from(projectsImages).forEach((image: Element): void => {
+        image.addEventListener("click", (e: Event): void => {
+            viewCenter(e);
+        });
+    });
+
+function viewCenter(e: Event) {
+    const imageClicked = e.target as HTMLElement;
+    if (imageClicked)
+        imageClicked.scrollIntoView({ behavior: "smooth", block: "center" });
+}
