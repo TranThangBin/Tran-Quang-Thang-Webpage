@@ -4,6 +4,10 @@ module.exports = {
     darkMode: "class",
     theme: {
         extend: {
+            colors: {
+                "gray-0": "hsl(0,0%,50%,0)",
+                "gray-1/2": "hsl(0,0%,50%,.5)",
+            },
             backgroundImage: {
                 starry: "url(../public/images/background/bg-starry.jpg)",
             },

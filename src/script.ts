@@ -72,7 +72,6 @@ function toggleSidebar(
 const projectsSectionElement = document.getElementById("projects");
 
 const projectsImages = projectsSectionElement?.getElementsByTagName("img");
-console.log(projectsImages);
 
 if (projectsImages)
     Array.from(projectsImages).forEach((image: Element): void => {
@@ -84,5 +83,8 @@ if (projectsImages)
 function viewCenter(e: Event) {
     const imageClicked = e.target as HTMLElement;
     if (imageClicked)
-        imageClicked.scrollIntoView({ behavior: "smooth", block: "center" });
+        imageClicked.scrollIntoView({
+            block: "center",
+            inline: "center",
+        });
 }

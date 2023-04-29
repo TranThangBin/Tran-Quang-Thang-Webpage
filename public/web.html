@@ -53,6 +53,11 @@
                     </a>
                 </li>
                 <li>
+                    <a data-nav-link href="#future" title="Go to projects">
+                        <i class="fa-solid fa-business-time">&nbsp;Future</i>
+                    </a>
+                </li>
+                <li>
                     <a data-nav-link href="#contact" title="Go to contact">
                         <i class="fa-solid fa-mobile-screen">&nbsp;Contact</i>
                     </a>
@@ -78,7 +83,7 @@
         <main class="mt-32">
             <section
                 id="home"
-                class="min-h-view-navless bg-gradient-to-tl from-[hsl(0,0%,50%,.5)] to-[hsl(0,0%,50%,0)] flex lg:flex-row justify-center items-center flex-col-reverse"
+                class="min-h-view-navless bg-gradient-to-tl from-gray-1/2 to-gray-0 flex lg:flex-row justify-center items-center flex-col-reverse"
             >
                 <div
                     class="lg:w-1/2 lg:text-left flex flex-col items-center lg:gap-4 gap-2 text-center"
@@ -88,7 +93,7 @@
                     </h1>
                     <p class="md:text-5xl text-4xl font-bold">
                         Great tech journeys begin with curiosity and
-                        determination.
+                        opportunities.
                     </p>
                     <a
                         href="#about"
@@ -112,7 +117,7 @@
             </section>
             <section
                 id="about"
-                class="lg:min-h-view-navless bg-gradient-to-bl from-[hsl(0,0%,50%,.5)] to-[hsl(0,0%,50%,0)] flex lg:flex-row justify-center items-center flex-col"
+                class="min-h-view-navless py-8 bg-gradient-to-bl from-gray-1/2 to-gray-0 flex lg:flex-row justify-center items-center flex-col"
             >
                 <img
                     src="./Images/personal-photo/MyOtherPhoto.jpg"
@@ -144,7 +149,7 @@
             </section>
             <section
                 id="techs"
-                class="py-8 border-b-4 bg-gradient-to-tl from-[hsl(0,0%,50%,.5)] to-[hsl(0,0%,50%,0)] flex flex-col justify-center items-center lg:gap-4 gap-2"
+                class="min-h-view-navless py-8 border-b-4 bg-gradient-to-tl from-gray-1/2 to-gray-0 flex flex-col justify-center items-center lg:gap-4 gap-2"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">Techs</h1>
                 <p
@@ -247,9 +252,10 @@
                     Checkout my past projects
                 </a>
             </section>
+            <section id="future" class="min-h-view-navless"></section>
             <section
                 id="projects"
-                class="min-h-view-navless my-6 flex flex-col justify-center items-center lg:gap-4 gap-2"
+                class="min-h-view-navless my-6 flex flex-col justify-center items-center gap-4"
             >
                 <h1 class="md:text-5xl text-4xl font-bold">My projects</h1>
                 <p
@@ -259,7 +265,7 @@
                 </p>
                 <ul class="w-5/6 flex flex-wrap justify-center gap-5">
                     <li
-                        class="w-full flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px-2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
+                        class="w-full bg-gray-700 bg-opacity-50 flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px-2222 transition-all duration-700 rounded-2xl overflow-hidden"
                     >
                         <img
                             src="./images/project-screenshot/project-Steel-Wool-Studios.gif"
@@ -273,20 +279,19 @@
                             class="lg:mx-4 my-4 flex flex-col justify-evenly items-center"
                         >
                             <p class="text-justify text-lg font-semibold mx-2">
-                                In my first semester, I had a group project to
-                                build a replica of an existing web page. I
+                                In the first semester, I had a group project
+                                replicate a design of an existing web page. I
                                 suggested
                                 <a
                                     href="https://steelwoolstudios.com/"
                                     class="text-blue-500"
                                     title="Check out their page here"
                                     target="_blank"
-                                    >Steel Wool Studios</a
                                 >
+                                    Steel Wool Studios
+                                </a>
                                 because I was familiar with them through "Five
-                                Nights at Freddy's" and the rest of the group
-                                agreed. I'm glad to have teammates like them and
-                                hope we can maintain this relationship.
+                                Nights at Freddy's".
                             </p>
                             <a
                                 href="https://github.com/TranThangBin/VLU-221-Semester-Web-Design-Project"
@@ -299,7 +304,7 @@
                         </div>
                     </li>
                     <li
-                        class="w-full flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px-2222 transition-all duration-700 bg-gray-700 rounded-2xl overflow-hidden"
+                        class="w-full bg-gray-700 bg-opacity-50 flex lg:flex-row flex-col max-w-64 max-h-64 lg:focus-within:max-w-screen lg:focus-within:max-h-64 focus-within:max-h-px-2222 transition-all duration-700 rounded-2xl overflow-hidden"
                     >
                         <img
                             src="./images/project-screenshot/project-ECATE.jpg"
@@ -325,9 +330,8 @@
                                 with a business theme. I volunteered to create
                                 the app for my group and it helped me practice
                                 my skills in TailwindCSS and TypeScript. I
-                                learned about "Mobile first design" and
-                                "Progressive Web App". I appreciate everyone in
-                                the team, especially our UI/UX designer
+                                appreciate everyone in the team, especially our
+                                UI/UX designer
                                 <span class="text-yellow-400">Nhi</span>.
                             </p>
                             <a

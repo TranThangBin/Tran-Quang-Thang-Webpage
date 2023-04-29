@@ -55,7 +55,6 @@ function toggleSidebar(e, hamburgerBtn, sidebar) {
 //-Centralize-project-image-position-on-click------------------------------------
 const projectsSectionElement = document.getElementById("projects");
 const projectsImages = projectsSectionElement?.getElementsByTagName("img");
-console.log(projectsImages);
 if (projectsImages)
     Array.from(projectsImages).forEach((image) => {
         image.addEventListener("click", (e) => {
@@ -65,5 +64,8 @@ if (projectsImages)
 function viewCenter(e) {
     const imageClicked = e.target;
     if (imageClicked)
-        imageClicked.scrollIntoView({ behavior: "smooth", block: "center" });
+        imageClicked.scrollIntoView({
+            block: "center",
+            inline: "center",
+        });
 }
