@@ -15,7 +15,7 @@ module.exports = {
                 "sidebar-list": "34.25rem",
             },
             maxWidth: {
-                64: "16rem",
+                52: "13rem",
                 screen: "100vw",
             },
             maxHeight: {
