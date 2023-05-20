@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-p-32">
+<html lang="en" class="scroll-p-32 scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,18 +19,18 @@
         <script type="module" src="../dist/script.js"></script>
         <title>Tran Thang Dev</title>
     </head>
-    <body class="text-white scrollbar bg-starry">
+    <body class="scrollbar bg-starry text-white">
         <nav
-            class="bg-starry fixed z-10 w-full h-32 flex items-center top-0 border-b-4"
+            class="fixed top-0 z-10 flex h-32 w-full items-center border-b-4 bg-starry"
         >
             <img
                 src="./icon/logo/NoBgLogo.png"
                 alt="Logo icon"
-                class="h-32 mx-auto"
+                class="mx-auto h-32"
             />
             <ul
                 id="sidebar"
-                class="md:w-sidebar-list w-1/2 md:min-h-fit min-h-view-navless md:mx-auto text-lg md:bg-transparent bg-starry md:static flex md:flex-row flex-col md:gap-x-10 flex-wrap md:justify-end justify-evenly items-center fixed top-32 right-full right-1/2 md:border-0 border-r-4 border-b-4 transition-all duration-300"
+                class="fixed right-1/2 right-full top-32 flex min-h-view-navless w-1/2 flex-col flex-wrap items-center justify-evenly border-b-4 border-r-4 bg-starry text-lg transition-all duration-300 md:static md:mx-auto md:min-h-fit md:w-sidebar-list md:flex-row md:justify-end md:gap-x-10 md:border-0 md:bg-transparent"
             >
                 <li>
                     <a data-nav-link href="#home" title="Go to home">
@@ -65,39 +65,39 @@
             </ul>
             <button
                 id="hamburger"
-                class="md:hidden block absolute right-9 hover:bg-white group p-2 border-2 rounded-md transition-colors duration-300"
+                class="group absolute right-9 block rounded-md border-2 p-2 transition-colors duration-300 hover:bg-white md:hidden"
                 title="Toggle sidebar"
                 type="button"
             >
                 <div
-                    class="w-7 h-1 bg-white rounded-full transition-all group-hover:bg-gray-600 duration-300"
+                    class="h-1 w-7 rounded-full bg-white transition-all duration-300 group-hover:bg-gray-600"
                 ></div>
                 <div
-                    class="w-7 h-1 bg-white rounded-full transition-all group-hover:bg-gray-600 duration-300 my-1"
+                    class="my-1 h-1 w-7 rounded-full bg-white transition-all duration-300 group-hover:bg-gray-600"
                 ></div>
                 <div
-                    class="w-7 h-1 bg-white rounded-full transition-all group-hover:bg-gray-600 duration-300"
+                    class="h-1 w-7 rounded-full bg-white transition-all duration-300 group-hover:bg-gray-600"
                 ></div>
             </button>
         </nav>
         <main class="mt-32">
             <section
                 id="home"
-                class="min-h-view-navless bg-gradient-to-tl from-gray-1/2 to-gray-0 flex lg:flex-row justify-center items-center flex-col-reverse"
+                class="flex min-h-view-navless flex-col-reverse items-center justify-center bg-gradient-to-tl from-gray-1/2 to-gray-0 lg:flex-row"
             >
                 <div
-                    class="lg:w-1/2 lg:text-left flex flex-col items-center lg:gap-4 gap-2 text-center"
+                    class="flex flex-col items-center gap-2 text-center lg:w-1/2 lg:gap-4 lg:text-left"
                 >
-                    <h1 class="text-gray-200 md:text-3xl text-2xl lg:mr-auto">
+                    <h1 class="text-2xl text-gray-200 md:text-3xl lg:mr-auto">
                         Hello I'm Tran Quang Thang
                     </h1>
-                    <p class="md:text-5xl text-4xl font-bold">
+                    <p class="text-4xl font-bold md:text-5xl">
                         Offering Front-end Web Development services. Stay tuned
                         for future expansion!
                     </p>
                     <a
                         href="#about"
-                        class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
+                        class="rounded-3xl bg-white px-4 py-2 font-semibold text-black"
                         title="See more"
                     >
                         See more
@@ -105,7 +105,7 @@
                 </div>
                 <div class="flex justify-center">
                     <div
-                        class="w-80 h-80 border-4 rounded-full flex justify-center items-center overflow-hidden"
+                        class="flex h-80 w-80 items-center justify-center overflow-hidden rounded-full border-4"
                     >
                         <img
                             src="./images/personal-photo/MyPhoto.png"
@@ -117,19 +117,19 @@
             </section>
             <section
                 id="about"
-                class="min-h-view-navless py-8 bg-gradient-to-bl from-gray-1/2 to-gray-0 flex lg:flex-row justify-center items-center flex-col"
+                class="flex min-h-view-navless flex-col items-center justify-center bg-gradient-to-bl from-gray-1/2 to-gray-0 py-8 lg:flex-row"
             >
                 <img
                     src="./images/personal-photo/MyOtherPhoto.jpg"
                     alt="Tran Quang Thang sitting on a swing"
-                    class="h-96 lg:rounded-r-full lg:rounded-tl-none rounded-t-full border-4"
+                    class="h-96 rounded-t-full border-4 lg:rounded-r-full lg:rounded-tl-none"
                 />
                 <div
-                    class="lg:w-1/2 my-2 flex flex-col items-center lg:gap-4 gap-2"
+                    class="my-2 flex flex-col items-center gap-2 lg:w-1/2 lg:gap-4"
                 >
-                    <h1 class="md:text-5xl text-4xl font-bold">About me</h1>
+                    <h1 class="text-4xl font-bold md:text-5xl">About me</h1>
                     <p
-                        class="w-10/12 text-gray-300 md:text-3xl sm:text-2xl text-xl font-semibold"
+                        class="w-10/12 text-xl font-semibold text-gray-300 sm:text-2xl md:text-3xl"
                     >
                         I'm a <span id="collegeYear"></span> student pursuing a
                         degree in Software Engineering at VLU Vietnam. I have a
@@ -140,7 +140,7 @@
                     </p>
                     <a
                         href="#techs"
-                        class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
+                        class="rounded-3xl bg-white px-4 py-2 font-semibold text-black"
                         title="See techs I use for my projects"
                     >
                         See current techs that I use
@@ -149,69 +149,69 @@
             </section>
             <section
                 id="techs"
-                class="min-h-view-navless py-8 border-b-4 bg-gradient-to-tl from-gray-1/2 to-gray-0 flex flex-col justify-center items-center lg:gap-4 gap-2"
+                class="flex min-h-view-navless flex-col items-center justify-center gap-2 border-b-4 bg-gradient-to-tl from-gray-1/2 to-gray-0 py-8 lg:gap-4"
             >
-                <h1 class="md:text-5xl text-4xl font-bold">Techs</h1>
+                <h1 class="text-4xl font-bold md:text-5xl">Techs</h1>
                 <p
-                    class="md:text-3xl sm:text-2xl text-xl text-center font-semibold"
+                    class="text-center text-xl font-semibold sm:text-2xl md:text-3xl"
                 >
                     Technologies I've experienced with:
                 </p>
-                <ul class="w-5/6 grid sm:grid-cols-2 grid-cols-1 gap-5">
+                <ul class="grid w-5/6 grid-cols-1 gap-5 sm:grid-cols-2">
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
-                        <i class="fab fa-html5 text-4xl text-red-500 mr-5"></i>
+                        <i class="fab fa-html5 mr-5 text-4xl text-red-500"></i>
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">HTML</h2>
+                            <h2 class="mb-2 text-2xl font-bold">HTML</h2>
                             <p>Semantic and accessible markup.</p>
                         </div>
                     </li>
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
                         <i
-                            class="fab fa-css3-alt text-4xl text-blue-400 mr-5"
+                            class="fab fa-css3-alt mr-5 text-4xl text-blue-400"
                         ></i>
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">CSS</h2>
+                            <h2 class="mb-2 text-2xl font-bold">CSS</h2>
                             <p>Responsive and visually appealing designs.</p>
                         </div>
                     </li>
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
                         <i
-                            class="fab fa-js-square text-4xl text-yellow-300 mr-5"
+                            class="fab fa-js-square mr-5 text-4xl text-yellow-300"
                         ></i>
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">JavaScript</h2>
+                            <h2 class="mb-2 text-2xl font-bold">JavaScript</h2>
                             <p>Dynamic and interactive user experiences.</p>
                         </div>
                     </li>
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
                         <img
                             src="./icon/tech/typescript-icon.png"
                             alt="TypeScript icon"
-                            class="w-9 h-9 mr-5"
+                            class="mr-5 h-9 w-9"
                         />
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">TypeScript</h2>
+                            <h2 class="mb-2 text-2xl font-bold">TypeScript</h2>
                             <p>Type-safe and scalable code using TypeScript.</p>
                         </div>
                     </li>
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
                         <img
                             src="./icon/tech/tailwindcss-icon.png"
                             alt="TailwindCSS icon"
-                            class="w-10 h-6 mr-5"
+                            class="mr-5 h-6 w-10"
                         />
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">TailwindCSS</h2>
+                            <h2 class="mb-2 text-2xl font-bold">TailwindCSS</h2>
                             <p>
                                 Custom designs using utility-first CSS
                                 framework.
@@ -219,13 +219,13 @@
                         </div>
                     </li>
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
                         <i
-                            class="fab fa-bootstrap text-4xl text-purple-600 mr-5"
+                            class="fab fa-bootstrap mr-5 text-4xl text-purple-600"
                         ></i>
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">Bootstrap</h2>
+                            <h2 class="mb-2 text-2xl font-bold">Bootstrap</h2>
                             <p>
                                 Responsive designs using the Bootstrap
                                 framework.
@@ -233,20 +233,20 @@
                         </div>
                     </li>
                     <li
-                        class="bg-gray-700 bg-opacity-50 p-5 rounded-lg flex items-center"
+                        class="flex items-center rounded-lg bg-gray-700 bg-opacity-50 p-5"
                     >
                         <i
-                            class="fa-brands fa-git-alt text-4xl text-orange-500 mr-5"
+                            class="fa-brands fa-git-alt mr-5 text-4xl text-orange-500"
                         ></i>
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">Git</h2>
+                            <h2 class="mb-2 text-2xl font-bold">Git</h2>
                             <p>Version control for tracking changes in code.</p>
                         </div>
                     </li>
                 </ul>
                 <a
                     href="#projects"
-                    class="bg-white text-black font-semibold px-4 py-2 rounded-3xl"
+                    class="rounded-3xl bg-white px-4 py-2 font-semibold text-black"
                     title="See my past project"
                 >
                     Checkout my past projects
@@ -254,30 +254,30 @@
             </section>
             <section
                 id="projects"
-                class="min-h-view-navless my-6 flex flex-col justify-center items-center gap-4"
+                class="my-6 flex min-h-view-navless flex-col items-center justify-center gap-4"
             >
-                <h1 class="md:text-5xl text-4xl font-bold">My projects</h1>
+                <h1 class="text-4xl font-bold md:text-5xl">My projects</h1>
                 <p
-                    class="md:text-3xl sm:text-2xl text-xl text-center font-semibold"
+                    class="text-center text-xl font-semibold sm:text-2xl md:text-3xl"
                 >
                     These are projects that I've done
                 </p>
-                <ul class="w-5/6 flex flex-wrap justify-center gap-5">
+                <ul class="flex w-5/6 flex-wrap justify-center gap-5">
                     <li
-                        class="w-full bg-gray-700 bg-opacity-50 flex lg:flex-row flex-col max-w-52 max-h-52 lg:focus-within:max-w-screen lg:focus-within:max-h-52 focus-within:max-h-px-2222 transition-all duration-700 rounded-2xl overflow-hidden"
+                        class="flex max-h-52 w-full max-w-52 flex-col overflow-hidden rounded-2xl bg-gray-700 bg-opacity-50 transition-all duration-700 focus-within:max-h-px-2222 lg:flex-row lg:focus-within:max-h-52 lg:focus-within:max-w-screen"
                     >
                         <img
                             src="./images/project-screenshot/project-Steel-Wool-Studios.gif"
                             alt="Project Steel Wool Studios"
-                            class="w-52 h-52"
+                            class="h-52 w-52"
                             role="button"
                             tabindex="0"
                             title="See more about project Steel Wool Studios"
                         />
                         <div
-                            class="lg:mx-4 my-4 flex flex-col justify-evenly items-center"
+                            class="my-4 flex flex-col items-center justify-evenly lg:mx-4"
                         >
-                            <p class="text-justify text-lg font-semibold mx-2">
+                            <p class="mx-2 text-justify text-lg font-semibold">
                                 In the first semester, I had a group project
                                 clone a design of an existing web page. I
                                 suggested
@@ -295,7 +295,7 @@
                             <a
                                 href="https://github.com/TranThangBin/VLU-221-Semester-Web-Design-Project"
                                 target="_blank"
-                                class="bg-white text-black font-semibold px-4 py-2 rounded-3xl my-2"
+                                class="my-2 rounded-3xl bg-white px-4 py-2 font-semibold text-black"
                                 title="Go to Project Steel Wool Studios repos"
                             >
                                 Project repos here
@@ -303,20 +303,20 @@
                         </div>
                     </li>
                     <li
-                        class="w-full bg-gray-700 bg-opacity-50 flex lg:flex-row flex-col max-w-52 max-h-52 lg:focus-within:max-w-screen lg:focus-within:max-h-52 focus-within:max-h-px-2222 transition-all duration-700 rounded-2xl overflow-hidden"
+                        class="flex max-h-52 w-full max-w-52 flex-col overflow-hidden rounded-2xl bg-gray-700 bg-opacity-50 transition-all duration-700 focus-within:max-h-px-2222 lg:flex-row lg:focus-within:max-h-52 lg:focus-within:max-w-screen"
                     >
                         <img
                             src="./images/project-screenshot/project-ECATE.jpg"
                             alt="Project ECATE"
-                            class="w-52 h-52"
+                            class="h-52 w-52"
                             role="button"
                             tabindex="0"
                             title="See more about project ECATE"
                         />
                         <div
-                            class="lg:mx-4 my-4 flex flex-col justify-evenly items-center"
+                            class="my-4 flex flex-col items-center justify-evenly lg:mx-4"
                         >
-                            <p class="text-justify text-lg font-semibold mx-2">
+                            <p class="mx-2 text-justify text-lg font-semibold">
                                 <a
                                     href="https://tranthangbin.github.io/ECATE/"
                                     class="text-blue-500"
@@ -336,7 +336,7 @@
                             <a
                                 href="https://github.com/TranThangBin/ECATE"
                                 target="_blank"
-                                class="bg-white text-black font-semibold px-4 py-2 rounded-3xl my-2"
+                                class="my-2 rounded-3xl bg-white px-4 py-2 font-semibold text-black"
                                 title="Go to Project Steel Wool Studios repos"
                             >
                                 Project repos here
@@ -355,43 +355,43 @@
             <!-- <section id="future" class="min-h-view-navless"></section> -->
             <section
                 id="contact"
-                class="md:min-h-view-navless flex justify-center items-center"
+                class="flex items-center justify-center md:min-h-view-navless"
             >
                 <div
-                    class="w-5/6 p-8 lg:my-0 my-6 bg-white text-black flex flex-col justify-center items-center lg:gap-4 gap-2 rounded-md shadow-inner shadow-black"
+                    class="my-6 flex w-5/6 flex-col items-center justify-center gap-2 rounded-md bg-white p-8 text-black shadow-inner shadow-black lg:my-0 lg:gap-4"
                 >
-                    <h1 class="md:text-5xl text-4xl font-bold">Contact me</h1>
-                    <p class="md:text-3xl sm:text-2xl text-xl text-center">
+                    <h1 class="text-4xl font-bold md:text-5xl">Contact me</h1>
+                    <p class="text-center text-xl sm:text-2xl md:text-3xl">
                         Directly contact me through email
                     </p>
                     <form
                         action="https://api.web3forms.com/submit"
                         method="POST"
-                        class="w-full grid md:grid-cols-3 grid-cols-2 sm:gap-x-2 gap-x-0 gap-y-2 text-xl font-semibold"
+                        class="grid w-full grid-cols-2 gap-x-0 gap-y-2 text-xl font-semibold sm:gap-x-2 md:grid-cols-3"
                     >
                         <input
                             type="hidden"
                             name="access_key"
                             value="5312430f-45aa-4b0c-b392-166043034f36"
                         />
-                        <div class="flex flex-col sm:col-span-1 col-span-2">
+                        <div class="col-span-2 flex flex-col sm:col-span-1">
                             <label for="first-name">First Name:</label>
                             <input
                                 type="text"
                                 placeholder="John"
-                                class="outline-none border-2 p-2"
+                                class="border-2 p-2 outline-none"
                                 name="first-name"
                                 autocomplete="off"
                                 spellcheck="false"
                                 required
                             />
                         </div>
-                        <div class="flex flex-col sm:col-span-1 col-span-2">
+                        <div class="col-span-2 flex flex-col sm:col-span-1">
                             <label for="last-name">Last Name:</label>
                             <input
                                 type="text"
                                 placeholder="Doe"
-                                class="outline-none border-2 p-2"
+                                class="border-2 p-2 outline-none"
                                 name="last-name"
                                 autocomplete="off"
                                 spellcheck="false"
@@ -399,13 +399,13 @@
                             />
                         </div>
                         <div
-                            class="mt-auto w-full flex flex-col col-span-2 order-4"
+                            class="order-4 col-span-2 mt-auto flex w-full flex-col"
                         >
                             <label for="email">Email:</label>
                             <input
                                 type="email"
                                 placeholder="john.doe@example.com"
-                                class="outline-none border-2 p-2"
+                                class="border-2 p-2 outline-none"
                                 name="email"
                                 autocomplete="off"
                                 spellcheck="false"
@@ -413,11 +413,11 @@
                             />
                         </div>
                         <div
-                            class="h-52 flex flex-col row-span-2 md:col-span-1 col-span-2 md:order-3 order-4"
+                            class="order-4 col-span-2 row-span-2 flex h-52 flex-col md:order-3 md:col-span-1"
                         >
                             <label for="message">Message:</label>
                             <textarea
-                                class="h-full outline-none border-2 p-2 resize-none"
+                                class="h-full resize-none border-2 p-2 outline-none"
                                 placeholder="Please enter your message here."
                                 name="message"
                                 autocomplete="off"
@@ -430,11 +430,11 @@
                             name="redirect"
                             value="https://web3forms.com/success"
                         />
-                        <div class="flex justify-center col-span-3 order-last">
+                        <div class="order-last col-span-3 flex justify-center">
                             <input
                                 type="submit"
                                 value="Submit"
-                                class="px-4 py-2 text-white bg-blue-600 rounded-3xl cursor-pointer"
+                                class="cursor-pointer rounded-3xl bg-blue-600 px-4 py-2 text-white"
                             />
                         </div>
                     </form>
@@ -442,9 +442,9 @@
             </section>
         </main>
         <footer
-            class="py-4 flex flex-col items-center md:text-2xl sm:text-1xl text-lg font-semibold border-t-4"
+            class="sm:text-1xl flex flex-col items-center border-t-4 py-4 text-lg font-semibold md:text-2xl"
         >
-            <p class="md:text-lg sm:text-sm text-xs">
+            <p class="text-xs sm:text-sm md:text-lg">
                 Copyright © <span id="copyrightYear"></span> Tran Quang Thang.
                 All rights reserved.
             </p>
